@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Acessível - Auditoria de Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Portal de Acessibilidade</h1>
+        <nav>
+            <ul>
+                <li><a href="#conteudo-principal">Pular para o conteúdo</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section>
+            <h2>Formulário de Feedback</h2>
+            <p>Sua opinião é fundamental para melhorarmos nossos serviços.</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Ex: João Silva">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="email@exemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Vídeo Demonstrativo</h2>
+            <div class="video-container">
+                <video controls width="100%" poster="thumb.jpg">
+                    <source src="video.mp4" type="video/mp4">
+                    <track src="legendas_pt.vtt" kind="subtitles" srclang="pt" label="Português" default>
+                    Seu navegador não suporta a reprodução de vídeo. <a href="video.mp4">Baixe o vídeo aqui</a>.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Engenharia de Interfaces</p>
+    </footer>
+
+</body>
+
+</html>
